@@ -13,7 +13,7 @@ def main():
     goodbye("Bashful")
     hello("Grumpy")
     hello("Sleepy")
-    hello_and_goodbye("Magic Micror", "Cruel Queen")
+    hello_and_goodbye("Magic Mirror", "Cruel Queen")
 
 
 def hello(friend):
@@ -32,3 +32,9 @@ def hello_and_goodbye(person1, person2):
 
 
 main()
+
+# Hello, Snow White! How are things?
+# Goodbye, Bashful!
+#   Ciao
+#   Bai Bai
+# Hello, Grumpy
