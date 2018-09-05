@@ -4,12 +4,12 @@ Demonstrates using (calling) FUNCTIONS and using (calling) METHODS:
   -- how they differ.
 
 Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
-         their colleagues and Vibha Alangar.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Hunter Hicks.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
 #
-# TODO: 2.
+# Done: 2.
 #   READ this comment, ASKING QUESTIONS as needed to understand it.
 #
 # Part 1:  CONSTRUCTING objects, applying ** METHODS ** to them:
@@ -81,8 +81,10 @@ def main():
     turtle = rg.SimpleTurtle('square')
     draw_many_squares(turtle, 3, 75, 15)
 
-    turtle3()
-
+    turtle3('red', 4)
+    try_methods()
+    try_functions()
+    try_methods_and_functions()
     ###########################################################################
     # When the TODOs ask you to test YOUR code, put YOUR tests below this:
     ###########################################################################
@@ -171,6 +173,12 @@ def turtle3(color, thickness):
 
 
 def try_methods():
+    angela = rg.SimpleTurtle('turtle')
+    angela.pen = rg.Pen('brown', 5)
+    angela.forward(150)
+    angela.left(90)
+    angela.forward(50)
+    angela.backward(100)
     """
     Constructs a SimpleTurtle and sets its   pen   to a new rg.Pen
     that is 'brown' with thickness 5.
@@ -181,13 +189,16 @@ def try_methods():
       -- backward  100 units
     """
     ###########################################################################
-    # TODO: 3. Implement and test this function, per its doc-string above.
+    # Done: 3. Implement and test this function, per its doc-string above.
     #     (To test it, put a statement in   main   that calls this function.)
     ###########################################################################
 
 
 def try_functions():
     # IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
+    jump_and_move_turtle(200, 100, 300, 30)
+    jump_and_move_turtle(100, 200, 0, 0)
+    jump_and_move_turtle(-50, 50, 100, 100)
     """
     Causes several SimpleTurtles to do the following:
      -- One jumps to (200, 100), then moves (while drawing) to (300, 30)
@@ -195,7 +206,7 @@ def try_functions():
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
     ###########################################################################
-    # TODO: 4. Implement and test this function, per its doc-string above.
+    # Done: 4. Implement and test this function, per its doc-string above.
     #    (To test it, put a statement in   main   that calls this function.)
     #
     #    NOTE: This function requires
@@ -207,6 +218,21 @@ def try_functions():
 
 
 def try_methods_and_functions():
+    randy = rg.SimpleTurtle('turtle')
+    randy.pen = rg.Pen('blue', 5)
+    randy.backward(150)
+    randy.speed = 1
+    draw_many_squares(randy, 2, 100,30)
+    randy.speed = 5
+    randy.pen = rg.Pen('red', 5)
+    draw_many_squares(randy, 10, 50, 15)
+    randy.speed = 100
+    randy.pen = rg.Pen('red', 35)
+    draw_many_squares(randy, 8, 300, 60)
+    randy.pen = rg.Pen('black', 3)
+
+
+
     # IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
     """
     Constructs a SimpleTurtle and sets its   pen  to a new rg.Pen
