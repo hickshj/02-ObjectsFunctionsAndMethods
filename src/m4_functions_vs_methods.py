@@ -230,6 +230,9 @@ def try_methods_and_functions():
     randy.pen = rg.Pen('red', 35)
     draw_many_squares(randy, 8, 300, 60)
     randy.pen = rg.Pen('black', 3)
+    randy.backward(200)
+    randy.draw_circle(30)
+    randy.draw_square(50)
 
 
 
@@ -266,7 +269,7 @@ def try_methods_and_functions():
       8. Draw a SQUARE whose sides are each of length 50.
     """
     ###########################################################################
-    # TODO: 5. Implement and test this function, per its doc-string above.
+    # Done: 5. Implement and test this function, per its doc-string above.
     #    (To test it, put a statement in   main   that calls this function.)
     #
     #   NOTE: This function should ** CALL ** the
