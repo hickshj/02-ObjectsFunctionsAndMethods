@@ -235,7 +235,6 @@ def try_methods_and_functions():
     randy.draw_square(50)
 
 
-
     # IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
     """
     Constructs a SimpleTurtle and sets its   pen  to a new rg.Pen
